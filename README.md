@@ -1,24 +1,23 @@
 Jinda
 =====
 
-Kind of Java distributed spaces, kind of asynchronous sockets, kind of process monitor, kind of JVM manager
+Kind of Java distributed spaces, kind of asynchronous sockets, kind of process cache, kind of data and process mirror.
 
 Why? Gelernter described the original vision. 
 
 Why not? Stuff like JCS, memcache, ehcache, hazelcast, river, terracotta, gigaspaces, blitz, java tuplespaces, 
-tibco activespaces, infinispan, Jboss cache, and many more are out there, but I find them hard to access. I have
-certain requirements I want to achieve and everything seems to do everything, but in a too complicated or a too
-commercial way.
+tibco activespaces, infinispan, Jboss cache, and many more are out there for data, but I find them hard to access.
+Not sure what's out there as a distributed process cache. I have certain requirements I want to achieve and 
+everything seems to do everything, but in a too complicated or a too commercial way.
 
-Hazelcast was simplest and easiest at just a few jars, and it meets some of my requirements. 
+Hazelcast was simplest and easiest data mirror at just a few jars, and it meets some of the data requirements. 
 The gigaspaces community download was 144 Mb, what????
 
-To me it seems like everything is reinventing UNIX, particularly filters and forks, although in a more 
-distributed fashion. Both processes and data are distributed.
+It feels like it's all UNIX reinvention, particularly filters and forks, but perhaps in a more distributed fashion.
+In Jinda both processes and data are distributed.
 
-So it's another UNIX reinvention in Java: I just want one or two jars that are very simple.
-In the UNIX tradition of do one thing and do it well, the jar is a collection of single requirements. Those
-requirements are:
+So it's a bit of a UNIX reinvention in Java: I just want one or two jars that are very simple. In the UNIX 
+tradition of do one thing and do it well, the jar is a collection of single requirements. Those requirements are:
 
 Client requirements (the pipes and filters): process start, process stop, data put, data get
 
@@ -40,3 +39,5 @@ down a Jinda on a DR box in another cluster can take over as primary.
 
 Alternatively processes can be managed from some other monitor, and Jinda is simply configured to distribute and 
 manage data.
+
+See the Wiki for more stuff.
