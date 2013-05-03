@@ -16,7 +16,7 @@ The gigaspaces community download was 144 Mb, what????
 To me it seems like everything is reinventing UNIX, particularly filters and forks, although in a more 
 distributed fashion. Both processes and data are distributed.
 
-So it's another UNIX reinvention in Java: I just want a jar that can do everything everywhere but is very simple.
+So it's another UNIX reinvention in Java: I just want one or two jars that are very simple.
 In the UNIX tradition of do one thing and do it well, the jar is a collection of single requirements. Those
 requirements are:
 
