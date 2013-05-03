@@ -1,7 +1,7 @@
 Jinda
 =====
 
-Kind of Java distributed spaces. Kind of asynchronous sockets.
+Kind of Java distributed spaces, kind of asynchronous sockets, kind of process performance manager.
 
 Why? Gelernter described the original vision. 
 
@@ -37,4 +37,5 @@ When the primary box goes down the secondary Jinda realises and kicks in, making
 sets available, but further distributing another secondary of itself on some other box available to it in the 
 cluster. If the whole cluster goes down a Jinda on a DR box in another cluster can take over as primary.
 
-Alternatively processes can be managed from some other monitor, and Jinda is simply configured to manage data.
+Alternatively processes can be managed from some other monitor, and Jinda is simply configured to distribute and 
+manage data.
