@@ -14,5 +14,6 @@ Sounds like everything is reinventing UNIX filters and forks. Here's another UNI
 I want a jar that is very simple and can do everything everywhere.
 
 Client Actions (the filters): put, get, take, browse, listen
+
 Server Actions (the forks): auto discovery, auto copy (distribute), auto heal
 
