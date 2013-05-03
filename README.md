@@ -13,17 +13,22 @@ commercial way.
 Hazelcast was simplest and easiest. Gigaspaces community download was 144 Mb, what????
 
 To me it seems like everything is reinventing UNIX, particularly filters and forks, although in a more 
-distributed fashion?
+distributed fashion. Both processes and data are distributed.
 
-Well here's another UNIX reinvention in Java: I just want a jar that can do everything everywhere but is very simple.
+So it's another UNIX reinvention in Java: I just want a jar that can do everything everywhere but is very simple.
 In the UNIX tradition of do one thing and do it well, the jar is a collection of single requirements. Those
 requirements are:
 
 Client requirements (the filters): put, get, take, browse, listen
 
-Server requirements (the forks): auto discovery, auto copy (distribute itself), auto heal
+Server requirements (the forks): auto discovery (monitor), auto copy (distribute), auto availability (self heal)
 
-Performance (the speed): As if shared memory on the same server. Basically as if everything was on the same box. 
-When the primary box goes down everything in the Jinda auto heals to the secondary which creates another secondary
-of itself on another box in the cluster. It's as if the Jinda becomes the JVM and forks itself. In other words the
-Jinda knows every Java process registered with it, which it auto replicates to a secondary.
+Performance (the speed): All processes and memory run on the same server wherever possible
+
+If the Jinda auto discovery can find all the required processes and data on the same box then those are the set 
+made available. If not, then Jinda searches for those required processes and data available through all the boxes 
+on the cluster, and makes the set available that provides the highest throughput.
+
+When the primary box goes down the secondary Jinda realises and kicks in, which in turn creates another secondary 
+of itself on some other box available to it in the cluster. If the whole cluster goes down a Jinda on a DR box in
+another cluster can take over as primary.
