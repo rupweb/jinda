@@ -24,7 +24,7 @@ Client requirements (the filters): put, get, take, browse, listen
 
 Server requirements (the forks): auto discovery (monitor), auto copy (distribute), auto availability (self heal)
 
-Performance (the speed): All processes and memory run on the same server wherever possible
+Performance (the speed): The space and all the processes that use the space run on the same server wherever possible
 
 If the Jinda monitor can find all the required processes and data on the same box then those are the set 
 made available. If not, then Jinda monitor searches for those required processes and data available through all 
