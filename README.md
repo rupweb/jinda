@@ -10,7 +10,8 @@ tibco activespaces, infinispan, Jboss cache, and many more are out there, but I 
 certain requirements I want to achieve and everything seems to do everything, but in a too complicated or a too
 commercial way.
 
-Hazelcast was simplest and easiest. Gigaspaces community download was 144 Mb, what????
+Hazelcast was simplest and easiest at just a few jars, and it meets some of my requirements. 
+The gigaspaces community download was 144 Mb, what????
 
 To me it seems like everything is reinventing UNIX, particularly filters and forks, although in a more 
 distributed fashion. Both processes and data are distributed.
