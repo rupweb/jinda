@@ -1,7 +1,8 @@
 Jinda
 =====
 
-Kind of Java distributed spaces, kind of asynchronous sockets, kind of process cache, kind of data and process mirror.
+Kind of Java distributed spaces, kind of asynchronous sockets, kind of process cache, kind of mirror for both data 
+and processes that use the data.
 
 Why? Gelernter described the original vision. 
 
