@@ -1,7 +1,7 @@
 Jinda
 =====
 
-Kind of Java distributed spaces, kind of asynchronous sockets, kind of process performance manager, kind of JVM manager
+Kind of Java distributed spaces, kind of asynchronous sockets, kind of process monitor, kind of JVM manager
 
 Why? Gelernter described the original vision. 
 
