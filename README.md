@@ -1,7 +1,7 @@
 Jinda
 =====
 
-Kind of Java distributed spaces. Kind of like hazelcast.
+Kind of Java distributed spaces. Kind of asynchronous sockets.
 
 Why? Gelernter described the original vision. 
 
