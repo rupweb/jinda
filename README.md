@@ -11,4 +11,8 @@ although hazelcast access is easy.
 
 Sounds like everything is reinventing UNIX filters and forks. Here's another UNIX reinvention.
 
-I want a jar that can do everything everywhere.
+I want a jar that is very simple and can do everything everywhere.
+
+Client Actions (the filters): put, get, take, browse, listen
+Server Actions (the forks): auto discovery, auto copy (distribute), auto heal
+
