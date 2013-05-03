@@ -20,7 +20,7 @@ So it's another UNIX reinvention in Java: I just want one or two jars that are v
 In the UNIX tradition of do one thing and do it well, the jar is a collection of single requirements. Those
 requirements are:
 
-Client requirements (the filters): put, get, take, browse, listen
+Client requirements (the filters): process start, process stop, data put, data get
 
 Server requirements (the forks): auto discovery (monitor), auto copy (distribute), auto availability (self heal)
 
