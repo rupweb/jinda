@@ -36,3 +36,5 @@ again.
 When the primary box goes down the secondary Jinda realises and kicks in, making all required processes and data
 sets available, but further distributing another secondary of itself on some other box available to it in the 
 cluster. If the whole cluster goes down a Jinda on a DR box in another cluster can take over as primary.
+
+Alternatively processes can be managed from some other monitor, and Jinda is simply configured to manage data.
