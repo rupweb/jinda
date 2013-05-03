@@ -26,9 +26,9 @@ Server requirements (the forks): auto discovery (monitor), auto copy (distribute
 
 Performance (the speed): All processes and memory run on the same server wherever possible
 
-If the Jinda auto discovery can find all the required processes and data on the same box then those are the set 
-made available. If not, then Jinda searches for those required processes and data available through all the boxes 
-on the cluster, and makes the set available that provides the highest throughput.
+If the Jinda monitor can find all the required processes and data on the same box then those are the set 
+made available. If not, then Jinda monitor searches for those required processes and data available through all 
+the boxes on the cluster, and makes the set available that provides the highest throughput.
 
 When the primary box goes down the secondary Jinda realises and kicks in, which in turn creates another secondary 
 of itself on some other box available to it in the cluster. If the whole cluster goes down a Jinda on a DR box in
