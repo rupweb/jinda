@@ -27,10 +27,12 @@ Server requirements (the forks): auto discovery (monitor), auto copy (distribute
 Performance (the speed): The space and all the processes that use the space run on the same server wherever possible
 BUT
 
-while the Jinda monitor can find all the required processes and data on the same box then those are the set 
-made available. If something fails, then the Jinda monitor searches for the required processes and data sets
-available through all the boxes on the cluster, and makes the set available providing the highest throughput.
+where the Jinda monitor can find the required processes and data sets on the same box then those are the sets 
+made available. If a process fails, the Jinda monitor finds and starts the required processes and data sets
+available through all the boxes on the cluster, attempting to make the set available that provides the lowest latency
+and highest throughput. If the data corrupts the Jinda dumps the most recent input to file and becomes available 
+again.
 
-When the primary box goes down the secondary Jinda realises and kicks in, which in turn creates another secondary 
-of itself on some other box available to it in the cluster. If the whole cluster goes down a Jinda on a DR box in
-another cluster can take over as primary.
+When the primary box goes down the secondary Jinda realises and kicks in, making all required processes and data
+sets available, but further distributing another secondary of itself on some other box available to it in the 
+cluster. If the whole cluster goes down a Jinda on a DR box in another cluster can take over as primary.
