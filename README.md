@@ -16,11 +16,14 @@ To me it seems like everything is reinventing UNIX, particularly filters and for
 distributed fashion?
 
 Well here's another UNIX reinvention in Java: I just want a jar that can do everything everywhere but is very simple.
+In the UNIX tradition of do one thing and do it well, the jar is a collection of single requirements. Those
+requirements are:
 
-Client Actions (the filters): put, get, take, browse, listen
+Client requirements (the filters): put, get, take, browse, listen
 
-Server Actions (the forks): auto discovery, auto copy (distribute), auto heal
+Server requirements (the forks): auto discovery, auto copy (distribute itself), auto heal
 
-Performance (the speed): As if shared memory on the same server. Basically as if everything was on the same box. If 
-the primary box goes down then everything auto heals to the secondary which creates another secondary. 
-It's as if the Jinda becomes the JVM and forks itself.
+Performance (the speed): As if shared memory on the same server. Basically as if everything was on the same box. 
+When the primary box goes down everything in the Jinda auto heals to the secondary which creates another secondary
+of itself on another box in the cluster. It's as if the Jinda becomes the JVM and forks itself. In other words the
+Jinda knows every Java process registered with it, which it auto replicates to a secondary.
